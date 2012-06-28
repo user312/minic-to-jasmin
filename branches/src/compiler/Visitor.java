@@ -3,15 +3,6 @@ package compiler;
 import ast.*;
 import java.io.PrintWriter;
 
-/**
- * <p>Title: Programming mini project 2 Java-- compiler</p>
- * <p>Description: A visitor that visits the AST for the program being compiled. Implements the Visitor
- * pattern (Gamma et al)</p>
- * <p>Copyright: Copyright (c) 2004 NIcholas Cameron</p>
- * <p>Company: </p>
- * @author Nicholas Cameron
- * @version 1.0
- */
 
 public abstract class Visitor
 {
