@@ -1,0 +1,40 @@
+#summary About the symbol descriptors
+
+= Introduction =
+
+Each symbol in the symbol table is made up an ID and a list of _descriptors_ that describes each entry.
+The descriptors are used to distinguish between variables and functions entry in the symbol table, because it's possible to have a variable and a fuction with the same name in the table
+
+= Details =
+
+Each descriptor is made up of this fields:
+
+{{{
+
+public class SymbolDesc{
+    private IdType type;
+    private IdType kind;
+    private int nBlock;
+    private ArrayList<IdType> paramList;
+        
+   [...]
+}}}
+
+|| Field || Desc ||
+|| `type` || speciify the id type (eg: INT, FLOAT...). ||
+|| `kind` || if the descriptor refers to a FUNCTION or a VARIABLE. ||
+|| `nBlock` || the number of the block where the variable is declared. Used only for variables. ||
+|| `paramList` || the list of the types of the params. Used only for functions. ||
+
+
+= Methods =
+
+Main methods are:
+
+{{{  public void setVariableSymbol(IdType type, int block) [...] }}}
+
+creates a descriptor for a variable in the map.
+
+{{{ public void setFunctionSymbol(IdType type, ArrayList<IdType> typeList) [...] }}}
+
+creates a descriptor for a function in the map.
