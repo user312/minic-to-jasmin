@@ -36,9 +36,10 @@ Note that it's possible to have a function and a varible with the same name. In 
 See example below:
 
 HashMap
-
+{{{
        ID                         Descriptors
 ------------+--------------------------------------
    symbol1      +    INT     | null        |  IdType.VARIABLE   | 1
                       + STRING  | params  |  IdType.FUNCTION  | 0
 ------------+--------------------------------------
+}}}
