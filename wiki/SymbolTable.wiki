@@ -21,8 +21,8 @@ The `SymbolTable` class exposes two main methods to add items in the collection:
 
 and two methods to retrieve elements from the list:
 
-*`get`
-*`getSpecific`
+ * `get`
+ * `getSpecific`
 
 The `getSpecific` method return a list of descriptors for the specific symbol either variable or function.
 
