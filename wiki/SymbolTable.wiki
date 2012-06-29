@@ -38,3 +38,5 @@ See example below:
 || *ID*   || *Descriptors*                                                       ||
 || Symbol ID  || INT|| null || {{{IdType.VARIABLE}}} || 1 ||
 ||                 ||STRING ||params|| {{{IdType.FUNCTION}}} || 0 ||
+
+where each descriptor is an istance of the class `SymbolDesc`.
