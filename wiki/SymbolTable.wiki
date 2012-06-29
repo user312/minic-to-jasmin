@@ -35,7 +35,7 @@ Note that it's possible to have a function and a varible with the same name. In 
 
 See example below:
 
-HashMap
+
 {{{
        ID                         Descriptors
 ------------+--------------------------------------
