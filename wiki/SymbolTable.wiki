@@ -16,8 +16,8 @@ A generic entry in the map is so made up by a String that represents the ID for 
 
 The `SymbolTable` class exposes two main methods to add items in the collection:
 
-*`putVariable`
-*`putFunction`
+ * `putVariable`
+ * `putFunction`
 
 and two methods to retrieve elements from the list:
 
