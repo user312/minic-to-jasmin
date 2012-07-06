@@ -16,6 +16,8 @@ public class SymbolDesc{
     private IdType kind;
     private int nBlock;
     private ArrayList<IdType> paramList;
+    private int dim;
+    private int jvmVar;
         
    [...]
 }}}
@@ -25,16 +27,17 @@ public class SymbolDesc{
 || `kind` || if the descriptor refers to a FUNCTION or a VARIABLE. ||
 || `nBlock` || the number of the block where the variable is declared. Used only for variables. ||
 || `paramList` || the list of the types of the params. Used only for functions. ||
-
+|| `dim` || the dimension of the variable. It is used to distinguish between normal var and arrays. ||
+|| `jvmVar || the var identifier for jvm ||
 
 = Methods =
 
 Main methods are:
 
-{{{  public void setVariableSymbol(IdType type, int block) [...] }}}
+{{{  public void setVariableSymbol(IdType type, int dim, int block) [...] }}}
 
 creates a descriptor for a variable in the map.
 
-{{{ public void setFunctionSymbol(IdType type, ArrayList<IdType> typeList) [...] }}}
+{{{ public void setFunctionSymbol(IdType type, ArrayList<IdType> typeList, int dim) [...] }}}
 
 creates a descriptor for a function in the map.
