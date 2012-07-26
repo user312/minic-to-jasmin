@@ -24,6 +24,9 @@ and some methods to retrieve elements from the list:
  * `get`
  * `getSpecific`
  * `getVariableType`
+ * `getFunctionType`
+ * `getVarDesc`
+ * `getFuncDesc`
 
 The `getSpecific` method return a list of descriptors for the specific symbol either variable or function.
 
