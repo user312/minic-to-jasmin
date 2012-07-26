@@ -39,6 +39,16 @@ Note that it's possible to have a function and a varible with the same name. In 
 
 See example below:
 
+In this example we have either a function and a variable called `plootoh`
+
+{{{
+[...]
+int plootoh;
+
+plootoh(4);
+[...]
+}}}
+
 || *ID*   || *Descriptors*                                                       ||
 || Symbol ID  || INT|| null || {{{IdType.VARIABLE}}} || 1 || JVM_INT||
 ||                 ||STRING ||params|| {{{IdType.FUNCTION}}} || 0 ||JVM_INT||
