@@ -42,15 +42,21 @@ See example below:
 In this example we have either a function and a variable called `plootoh`
 
 {{{
-[...]
-int plootoh;
 
-plootoh(4);
-[...]
+extern "MinicLib/plootoh" float plootoh(int);
+
+float main()
+{
+   int plootoh;
+   int p;
+   [...]
+
+   return plootoh(p);
+}
 }}}
 
 || *ID*   || *Descriptors*                                                       ||
-|| Symbol ID  || INT|| null || {{{IdType.VARIABLE}}} || 1 || JVM_INT||
-||                 ||STRING ||params|| {{{IdType.FUNCTION}}} || 0 ||JVM_INT||
+|| plootoh    || INT|| null || {{{IdType.VARIABLE}}} || 1 || 0 || "" ||
+||                 ||FLOAT ||{{{INT,0}}}|| {{{IdType.FUNCTION}}} || 0 ||-|| MinicLib/plootoh ||
 
 where each descriptor is an istance of the class `SymbolDesc`.
