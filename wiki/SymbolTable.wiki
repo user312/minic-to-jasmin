@@ -57,6 +57,6 @@ float main()
 
 || *ID*   || *Descriptors*                                                       ||
 || plootoh    || INT|| null || {{{IdType.VARIABLE}}} || 1 || 0 || "" ||
-||                 ||FLOAT ||{{{[INT,0]}}}|| {{{IdType.FUNCTION}}} || 0 ||-|| "MinicLib/plootoh" ||
+||                 ||FLOAT ||{{{[INT,0]}}}|| {{{IdType.FUNCTION}}} || 0 ||-|| MinicLib!/plootoh ||
 
 where each descriptor is an istance of the class `SymbolDesc`.
