@@ -18,7 +18,8 @@ public class SymbolDesc{
     private ArrayList<IdType> paramList;
     private int dim;
     private int jvmVar;
-        
+    private String className;
+
    [...]
 }}}
 
@@ -29,6 +30,7 @@ public class SymbolDesc{
 || `paramList` || the list of the types of the params. Used only for functions. ||
 || `dim` || the dimension of the variable. It is used to distinguish between normal var and arrays. ||
 || `jvmVar || the var identifier for jvm ||
+|| `className` || the name of a function including its class name (if extern). ||
 
 = Methods =
 
