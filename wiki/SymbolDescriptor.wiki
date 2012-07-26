@@ -29,7 +29,7 @@ public class SymbolDesc{
 || `nBlock` || the number of the block where the variable is declared. Used only for variables. ||
 || `paramList` || the list of the types of the params. Used only for functions. ||
 || `dim` || the dimension of the variable. It is used to distinguish between normal var and arrays. ||
-|| `jvmVar || the var identifier for jvm ||
+|| `jvmVar` || the var identifier for jvm ||
 || `className` || the name of a function including its class name (if extern). ||
 
 = Methods =
